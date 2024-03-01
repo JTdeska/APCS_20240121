@@ -21,12 +21,12 @@ int main(){
             v.push_back(v2[i]);
             }
         sort(v.begin(),v.end());
-        int c;
-        c=v2.size();
-        for(int t=0;t<v[c];t++){
-            for(int i=0;i<v2.size();i+=2){
-                
-            }
+        for(int i=0;i<v[v.size()];i++){
+                for(int t=0;t<v2.size();t+=2){
+                 if(i>v2[t]&&i<v2[t+1])
+                    sum++;
+                    continue;   
+                }
         }
     }
     cout<<sum<<endl;
