@@ -4,7 +4,7 @@
 
 using namespace std;
 int main(){
-    int a,sum=0;
+    int a,b,sum=0;
     cin>>a;
     vector<int> v2{};
     vector<int> v{};
@@ -23,10 +23,11 @@ int main(){
         sort(v.begin(),v.end());
         for(int i=0;i<v[v.size()];i++){
                 for(int t=0;t<v2.size();t+=2){
-                 if(i>v2[t]&&i<v2[t+1])
+                 if(i>v2[t]&&i<v2[t+1]&&b==0)
                     sum++;
-                    continue;   
+                    b=1;  
                 }
+        b=0;
         }
     }
     cout<<sum<<endl;
